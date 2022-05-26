@@ -77,7 +77,8 @@ export class RobotTableSimulator{
                     throw new Error('invalid command')
             }
         }catch(e){
-            return((e as Error).message);
+            //should ignore all invalid inputs
+            //return((e as Error).message);
         }
         return "";
     }
